@@ -10,26 +10,55 @@ html, body {
     }
 
     /* Cabeçalho */
-    .header {
-      grid-row: 1;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #333;
-      color: #fff;
-    }
+    #cabecalho {
+    background-color:rgb(201, 96, 96);
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    text-align: center;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
 
-    .menu a, .botao a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #fff;
-    }
 
-    .btn {
-      background: #0077ff;
-      padding: 6px 12px;
-      border-radius: 5px;
-    }
+}
+
+#background-cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo-header {
+    margin: 5px 5px;
+}
+
+#titulo-header {
+    text-align: center;
+    margin: 20px 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration:overline underline;
+}
+
+#menu-cabecalho {
+    flex-grow: 1;
+    align-content:center;
+}
+
+#menu-cabecalho ul {
+    display:flex;
+    justify-content:space-evenly;
+    list-style-type:none;
+    padding-top: 5px;
+}
+
+#menu-cabecalho li {
+    font-size: 20px;
+    color:aliceblue;
+    
+}
+
+#sobrenos-header {
+    cursor: pointer;
+    text-shadow:5px 5px 5px rgb(0, 0, 0);
+    color:rgb(255, 238, 1);
+}
 
     /* Área principal */
     .main-grid { 
@@ -83,18 +112,48 @@ html, body {
     }
 
     /* Rodapé */
-    .footer {
-      grid-row: 4;
-      display: flex;
-      justify-content: space-between;
-      padding: 15px 30px;
-      background: #333;
-      color: #fff;
-      flex-wrap: wrap;
-    }
+    #rodape {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+    background-color:rgb(0, 0, 0);
+    justify-content: space-between;
+}
 
-    .footer-menu a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-    }
+#area-rodape {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.colunas h3 {
+    margin-bottom: 30px;
+    color:aliceblue;
+}
+
+#coluna2 li {
+    margin-bottom: 20px;
+    list-style-type: none;
+    color:greenyellow;
+    cursor:pointer;
+}
+
+#coluna3 li {
+    margin-bottom: 20px;
+    list-style-type: none;
+    color:aliceblue;
+}
+
+.colunas p {
+    margin-bottom: 10px;
+    color:aliceblue;
+}
+
+.colunas span {
+    font-weight: bold;
+    color:coral;
+}
+
+#copyright {
+    color:deepskyblue;
+    margin-top: 130px;
+}
