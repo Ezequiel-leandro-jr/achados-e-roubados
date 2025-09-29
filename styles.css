@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    }
+
+    /* Cabeçalho */
+    .header {
+      grid-row: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #333;
+      color: #fff;
+    }
+
+    .menu a, .botao a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .btn {
+      background: #0077ff;
+      padding: 6px 12px;
+      border-radius: 5px;
+    }
+
+    /* Área principal */
+    .main-grid { 
+      display: grid;
+      grid-template-rows: 70px 40px 1fr 300px;
+      min-height: 100vh;
+      background-color:rgb(242, 207, 207);
+    }
+
+    #titulo-sobrenos {
+      grid-row: 2;
+      align-items: center;
+      justify-self: center;
+      font-size: 50px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 300px;
+    }
+
+    .conteudo{
+      width: 100%;
+      grid-row: 3;
+      display: flex;
+      justify-content: space-evenly;
+      margin: 80px auto;
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+    }
+
+    .foto {
+      display: block;
+      margin: 0 auto 15px auto;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #0077ff;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: #0077ff;
+      margin: 0 5px;
+    }
+
+    /* Rodapé */
+    .footer {
+      grid-row: 4;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background: #333;
+      color: #fff;
+      flex-wrap: wrap;
+    }
+
+    .footer-menu a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
