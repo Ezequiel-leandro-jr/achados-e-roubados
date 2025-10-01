@@ -8,12 +8,12 @@
     <title>Achados & Roubados</title>
 </head>
 <body>
-    <div id="principal">
-        <header id="cabecalho">
-            <div id="background-cabecalho">
-                <img id="logo-header" src="https://st2.depositphotos.com/1756201/8454/v/950/depositphotos_84541352-stock-illustration-beware-pickpocket-sign-thief-icon.jpg" width="110px" height="50px" style="cursor: pointer;">
-                <h3 id="titulo-header">Achados & Roubados</h3>
-                <nav id="menu-cabecalho">
+    <div class="principal">
+        <header class="cabecalho">
+            <div class="background-cabecalho">
+                <img class="logo-header" src="https://st2.depositphotos.com/1756201/8454/v/950/depositphotos_84541352-stock-illustration-beware-pickpocket-sign-thief-icon.jpg" width="110px" height="50px" style="cursor: pointer;">
+                <h3 class="titulo-header">Achados & Roubados</h3>
+                <nav class="menu-cabecalho">
                     <ul>
                         <li>Home</li>
                         <li>Novidades</li>
@@ -21,7 +21,7 @@
                         <li>Meus Pedidos</li>
                         <li>Minha Conta</li>
                         <li>
-                            <h3 class="botao-sobrenos" id="sobrenos-header">SOBRE NÓS</h3>
+                            <h3 class="botao-sobrenos sobrenos-header" onclick="window.location.href='aula.html';">SOBRE NÓS</h3>
                         </li>
                     </ul>
                 </nav>
@@ -42,7 +42,7 @@
                 </nav>
         </aside>
         <main id="area-produtos">
-            <h1 style="margin-left: 30px; background-color: rgb(13, 13, 14);">Eletrônicos</h1>
+            <h1 id="categoria-produto-titulo">Eletrônicos</h1>
             <div id="fila-produtos">
                 <div class="card-produto">
                     <div class="imagem-produto">
@@ -96,23 +96,23 @@
                 </div>
             </div>
         </main>
-        <footer id="rodape">
-            <div id="area-rodape">
-                <div class="colunas" id="coluna1">
+        <footer class="rodape">
+            <div class="area-rodape">
+                <div class="colunas coluna1">
                     <h3>Achados & Roubados</h3>
                     <p>Tudo o que você <span>precisa</span>, com o preço que cabe no seu <span>bolso!</span></p>
                     <p id="copyright">© Achados & Roubados - todos os direitos reservados</p>
                 </div>
-                <div class="colunas" id="coluna2">
+                <div class="colunas coluna2">
                     <h3>Links Rápidos</h3>
-                    <ul id="links-rodape">
-                        <li class="botao-sobrenos">Sobre nós</li>
+                    <ul class="links-rodape">
+                        <li class="botao-sobrenos" onclick="window.location.href='aula.html';">Sobre nós</li>
                         <li>Perguntas frequentes</li>
                         <li>Política de privacidade</li>
                         <li>Termos de uso</li>
                     </ul>
                 </div>
-                <div class="colunas" id="coluna3">
+                <div class="colunas coluna3">
                     <h3>Contato</h3>
                     <ul>
                         <li>Email: achados&roubados@email.com</li>
